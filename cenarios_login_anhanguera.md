@@ -1,6 +1,6 @@
 ## Suíte de Teste - Tela de Login Anhanguera
 
-# CT-03: Validar tentativa de login com senha incorreta (Fluxo Negativo)
+## CT-03: Validar tentativa de login com senha incorreta (Fluxo Negativo)
 * **PréCondição:** Usuário cadastrado no banco de dados.
 * **Passo a passo:**
     1. Acessar a URL de login da anhanguera.

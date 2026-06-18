@@ -19,7 +19,7 @@
 
 ### Partição de Equivalência (Classes de Equivalência)
 * **Classe Inválida (Menor):** Idade de 16 anos.
-    * *Resultado Esperado: * O sistema deve recusar o cadastro e exibir mensagem de erro indicando idade mínima.
+    * *Resultado Esperado:* O sistema deve recusar o cadastro e exibir mensagem de erro indicando idade mínima.
 * **Classe Válida (Dentro):** Idade de 40 anos.
     * *Resultado Esperado:* O sistema deve aceitar o dado e avançar no cadastro.
 * **Classe Inválida (Maior):** Idade de 80 anos.

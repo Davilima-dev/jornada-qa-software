@@ -1,6 +1,6 @@
-## Suíte de Testes Manuais
+# Suíte de Testes Anhanguera
 
-# CT-01: Validar tentativa de login com senha incorreta (Fluxo Negativo)
+## CT-01: Validar tentativa de login com senha incorreta (Fluxo Negativo)
 * **PréCondição:** Usuário cadastrado no banco de dados.
 * **Passo a passo:**
     1. Acessar a URL de login da anhanguera.
@@ -32,3 +32,23 @@
 * **Partição Menor (Inválida):** Testar com um CPF de 10 dígitos.
 * **Partição Válida:** Testar com um CPF de 11 dígitos.
 * **Partição Maior (Inválida):** Testar com um CPF de 12 dígitos.
+
+## Report de Bug Simulado (Exemplo Real)
+
+**ID do Bug:* BUG-01
+**Título:** [Login] - Sistema exibe Erro 500 internodo servidor ao inserir senha incorreta.
+**Gravidade:** Crítica (Impede o fluxo correto de tratamento de erro)
+
+### Descrição
+Ao tentar realizar o login com uma senha inválida, o sistema quebra retornando um erro de infraestrutura (HTTP 500) em vez de existir a mensagem amigável de "Senha incorreta".
+
+### Passo a Passo para Reproduzir
+1. Acessar a página de login da Anhanguera.
+2. Inserir um CPF válido e cadastrado.
+3. Clicar em "Prosseguir".
+4. Inserir uma senha incorreta (ex: '123456').
+5. Clicar no botão "Entrar".
+
+### Resultados
+* **Resultado Atual:** O sistema renderiza uma tela branca com o texto 'Erro 500: Internet Server Error'.
+* **Resultado Esperado:** O sistema deve permanecer na tela, limpar o campo de senha e exibir o alerta: '"Senha Incorreta. Tente novamente."'

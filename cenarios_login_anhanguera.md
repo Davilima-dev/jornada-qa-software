@@ -1,6 +1,6 @@
-## Suíte de Teste - Tela de Login Anhanguera
+## Suíte de Testes Manuais
 
-## CT-03: Validar tentativa de login com senha incorreta (Fluxo Negativo)
+# CT-01: Validar tentativa de login com senha incorreta (Fluxo Negativo)
 * **PréCondição:** Usuário cadastrado no banco de dados.
 * **Passo a passo:**
     1. Acessar a URL de login da anhanguera.
@@ -19,7 +19,7 @@
 
 ### Partição de Equivalência (Classes de Equivalência)
 * **Classe Inválida (Menor):** Idade de 16 anos.
-    * *Resultado Esperado: * O sistema deve recusar o cadastro e exibir mensagem de erro indicando idade mínima.
+    * *Resultado Esperado:* O sistema deve recusar o cadastro e exibir mensagem de erro indicando idade mínima.
 * **Classe Válida (Dentro):** Idade de 40 anos.
     * *Resultado Esperado:* O sistema deve aceitar o dado e avançar no cadastro.
 * **Classe Inválida (Maior):** Idade de 80 anos.
